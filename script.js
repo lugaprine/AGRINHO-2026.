@@ -27,4 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Exemplo de validação simples (caso adicione um formulário no futuro)
     console.log("Sistema interativo inicializado com sucesso!");
+    const displayArea = document.getElementById('displayArea');
+const buttons = document.querySelectorAll('.filter-btn');
+
+const conteudos = {
+    sustentabilidade: "<strong>Sustentabilidade:</strong> A agricultura moderna foca em regenerar o solo, economizar água e manter o equilíbrio do ecossistema para as próximas gerações.",
+    tecnologia: "<strong>Tecnologia:</strong> O uso de Drones, GPS e Inteligência Artificial permite que agricultores monitorem plantações em tempo real, aumentando a eficiência com menos desperdício.",
+    economia: "<strong>Economia:</strong> O agro é um pilar econômico fundamental, responsável por milhões de empregos, exportações recordes e o abastecimento das cidades."
+};
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const categoria = btn.getAttribute('data-info');
+        
+        // Efeito de fade out/in simples
+        displayArea.style.opacity = '0';
+        
+        setTimeout(() => {
+            displayArea.innerHTML = `<p>${conteudos[categoria]}</p>`;
+            displayArea.style.opacity = '1';
+        }, 200);
+    });
+});
 });

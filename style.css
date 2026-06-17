@@ -15,3 +15,25 @@ button:hover { background: #1b5e20; transform: scale(1.05); }
 
 .hidden { display: none; margin-top: 20px; padding: 20px; background: #e8f5e9; border-radius: 8px; }
 footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #666; }
+.acoes { display: flex; gap: 10px; justify-content: center; margin-bottom: 20px; }
+
+.filter-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #2e7d32;
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.filter-btn:hover { background: #2e7d32; color: white; }
+
+.display-box {
+    min-height: 100px;
+    padding: 25px;
+    background: #ffffff;
+    border-left: 8px solid #2e7d32;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
