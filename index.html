@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGRINHO 2026 | O Futuro do Agro</title>
-    
-    <!-- CSS Externo -->
+    <title>AGRINHO 2026 | Inovação no Agro</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,38 +20,93 @@
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#programacao">Programação</a></li>
+                    <li><a href="#palestrantes">Palestrantes</a></li>
                     <li><a href="#inscricoes">Inscrições</a></li>
-                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
             <button class="btn-inscrever">Inscrever-se Agora</button>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>O Futuro da Agricultura<br>é Agora</h1>
+            <h1>O Futuro do Agro<br>se Constrói Aqui</h1>
             <p class="subtitle">15 a 18 de Abril de 2026 • Curitiba, Paraná</p>
             <div class="hero-buttons">
                 <button class="btn-primary">Quero Participar</button>
-                <button class="btn-secondary">Saiba Mais</button>
+                <button class="btn-secondary">Ver Programação</button>
             </div>
+            <div class="countdown" id="countdown"></div>
         </div>
     </section>
 
     <!-- Sobre -->
     <section id="sobre" class="section">
         <div class="container">
-            <h2>Sobre o AGRINHO 2026</h2>
-            <p>O maior evento de inovação, tecnologia e sustentabilidade do agronegócio brasileiro. Um ponto de encontro entre produtores, estudantes, pesquisadores e empresas que moldam o futuro do campo.</p>
+            <h2>Sobre o Evento</h2>
+            <p class="about-text">O AGRINHO é o maior evento de inovação, tecnologia e sustentabilidade do agronegócio brasileiro. Um espaço onde produtores, startups, pesquisadores e empresas se conectam para construir o futuro do campo.</p>
         </div>
     </section>
 
+    <!-- Programação -->
+    <section id="programacao" class="section bg-light">
+        <div class="container">
+            <h2>Programação</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>15 Abril</h3>
+                    <p><strong>Abertura Oficial</strong><br>Palestras e Painéis</p>
+                </div>
+                <div class="card">
+                    <h3>16 Abril</h3>
+                    <p><strong>Tecnologia no Campo</strong><br>Drones, IA e Agricultura de Precisão</p>
+                </div>
+                <div class="card">
+                    <h3>17 Abril</h3>
+                    <p><strong>Sustentabilidade</strong><br>Carbono Neutro e Bioeconomia</p>
+                </div>
+                <div class="card">
+                    <h3>18 Abril</h3>
+                    <p><strong>Encerramento</strong><br>Feira de Exposições e Networking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Palestrantes -->
+    <section id="palestrantes" class="section">
+        <div class="container">
+            <h2>Palestrantes Confirmados</h2>
+            <div class="cards">
+                <div class="card speaker">
+                    <div class="speaker-img">👨‍🌾</div>
+                    <h3>Dr. João Mendes</h3>
+                    <p>Especialista em Agricultura 4.0</p>
+                </div>
+                <div class="card speaker">
+                    <div class="speaker-img">👩‍🔬</div>
+                    <h3>Profa. Ana Costa</h3>
+                    <p>Pesquisadora Embrapa</p>
+                </div>
+                <div class="card speaker">
+                    <div class="speaker-img">🌱</div>
+                    <h3>Rafael Silva</h3>
+                    <p>Fundador da AgroTech BR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p><strong>AGRINHO 2026</strong> • Todos os direitos reservados © 2026</p>
-        <p>Curitiba • Paraná • Brasil</p>
+        <div class="container">
+            <p><strong>AGRINHO 2026</strong> • O Futuro do Agro Brasileiro</p>
+            <p>Curitiba, Paraná | 15 a 18 de Abril de 2026</p>
+        </div>
     </footer>
 
+    <!-- JavaScript Externo -->
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html>-
